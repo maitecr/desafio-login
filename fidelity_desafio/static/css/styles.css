@@ -35,6 +35,9 @@ form {
 }
 
 .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 20px;
 }
 
@@ -45,6 +48,8 @@ label {
 input[type="email"], input[type="password"], input[type="text"] {
     display: block;
     width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -54,15 +59,31 @@ input[type="email"], input[type="password"], input[type="text"] {
 .buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px
 }
 
 input[type="submit"], input[type="button"] {
-    background-color: #A62121; /* Azul padrão */
+    background-color: #A62121; 
     color: white;
+    text-align: center;
     border: none;
+    min-width: 120px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 20px;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }

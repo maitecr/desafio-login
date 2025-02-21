@@ -19,10 +19,11 @@ from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 from django.conf import settings
-from . import views
+from . import views 
 
 urlpatterns = [
     path('admin/login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    #path('admin/login/', CustomLoginView.as_view(), name='login'),
     path('admin/', admin.site.urls),
     path('registrar/', views.registrar_usuario, name="registrar"),
     path('menu/', views.menu_page, name="menu")

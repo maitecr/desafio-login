@@ -1,9 +1,6 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth import authenticate, login
 from .forms import CustomUserCreationForm  
 from django.contrib import messages
-from django.contrib.auth import views as auth_views
-
 
 def registrar_usuario(request):
 
@@ -20,7 +17,6 @@ def registrar_usuario(request):
     else:
         form = CustomUserCreationForm()
     return render(request, template, {"form": form})
-
 
 def menu_page(request):
     template = "menu.html"
