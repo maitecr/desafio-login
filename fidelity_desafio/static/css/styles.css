@@ -8,7 +8,7 @@ header {
 }
 
 body {
-    background-color: #8349c6b0;
+    background-color: #fff;
 }
 
 main {
@@ -29,9 +29,9 @@ ul {
 
 form {
     background-color: #fff;
-    border: 5px solid rgb(97, 92, 92);
     border-radius: 20px;
-    padding: 1.5em;
+    box-shadow: 5px 10px 8px 10px rgba(97, 92, 92, 0.349);
+    padding: 3.5em;
 }
 
 .form-group {
@@ -43,6 +43,7 @@ label {
 }
 
 input[type="email"], input[type="password"], input[type="text"] {
+    display: block;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -57,11 +58,11 @@ input[type="email"], input[type="password"], input[type="text"] {
 }
 
 input[type="submit"], input[type="button"] {
-    background-color: #8349c6b0; /* Azul padrão */
+    background-color: #A62121; /* Azul padrão */
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
 }
