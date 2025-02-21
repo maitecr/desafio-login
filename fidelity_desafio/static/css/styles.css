@@ -1,0 +1,67 @@
+* {
+    font-family: "Roboto", serif;
+
+}
+
+header {
+    height: 80%;
+}
+
+body {
+    background-color: #8349c6b0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(97, 92, 92);
+}
+
+ul {
+    list-style: none; 
+    color: rgb(200, 25, 25);
+    font-weight: 600;
+}
+
+form {
+    background-color: #fff;
+    border: 5px solid rgb(97, 92, 92);
+    border-radius: 20px;
+    padding: 1.5em;
+}
+
+.form-group {
+    padding: 20px;
+}
+
+label {
+    font-size: 1rem;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #8349c6b0; /* Azul padrão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}

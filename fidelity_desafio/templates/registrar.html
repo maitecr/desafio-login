@@ -1,0 +1,72 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h1>Registrar Usuário</h1>
+<form action="" method="post">
+    {% csrf_token %}
+
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="form-group">
+        <label for="{{ form.username.id_for_label }}">Nome</label>
+        {{ form.username }}
+        {% if form.username.errors %}
+            <ul class="errorlist">
+                {% for error in form.username.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        <label for="{{ form.email.id_for_label }}">E-mail</label>
+        {{ form.email }}
+        {% if form.email.errors %}
+            <ul class="errorlist">
+                {% for error in form.email.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        <label for="{{ form.password1.id_for_label }}">Senha</label>
+        {{ form.password1 }}
+        {% if form.password1.errors %}
+            <ul class="errorlist">
+                {% for error in form.password1.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+    <div class="form-group">
+        <label for="{{ form.password2.id_for_label }}">Confirmar Senha</label>
+        {{ form.password2 }}
+        {% if form.password2.errors %}
+            <ul class="errorlist">
+                {% for error in form.password2.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+    <div class="buttons">
+        <input type="submit" value="Registrar">
+        <input type="button" value="Cancelar" onclick="window.location.href='{% url 'login' %}'">
+
+    </div>
+
+</form>
+
+{% endblock %}
