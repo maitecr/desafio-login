@@ -74,16 +74,13 @@ input[type="submit"], input[type="button"] {
     cursor: pointer;
     border-radius: 20px;
 }
-
-.password-wrapper {
-    position: relative;
+.mb-3 {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-#togglePassword {
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-    font-size: 18px;
+.password-wrapper {
+    position: relative;
 }
+
