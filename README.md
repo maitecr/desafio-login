@@ -18,7 +18,8 @@ Terminal CLI 01:
 3. Comando para migrações das tabelas: ```python manage.py migrate```
 4. Comando para incluir statics: ```python manage.py collectstatic```
 Comando para iniciar aplicação: ```python manage.py runserver```
-5. Acessar aplicação através do link fornecido pelo framework + url do admin: `http://127.0.0.1:8000/admin/`
+5. Acessar aplicação através do link fornecido pelo framework + url do admin: `http://127.0.0.1:8000/admin/`  
+
 Terminal CLI 02:
 1. Comando para instalação de um servidor STMP: ```pip install aiosmtpd```
 2. Comando para iniciar servidor STMP local:  ```python -m aiosmtpd --nosetuid --debug --listen localhost:1025```
