@@ -34,3 +34,4 @@ def MenuPage(request):
     template = "menu.html"
     if request.method == 'GET':
         return render(request, template, {'user': request.user})
+
