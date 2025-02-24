@@ -23,8 +23,7 @@ from . import views
 
 urlpatterns = [
     path('admin/login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
-    #path('admin/login/', CustomLoginView.as_view(), name='login'),
     path('admin/', admin.site.urls),
-    path('registrar/', views.registrar_usuario, name="registrar"),
-    path('menu/', views.menu_page, name="menu")
+    path('registrar/', views.UserRegister, name="registrar"),
+    path('menu/', views.MenuPage, name="menu")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
